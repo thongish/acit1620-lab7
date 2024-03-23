@@ -58,9 +58,13 @@ function setup() {
     getCheckbox().addEventListener('change', toggleInputState);
     getNumberInput().addEventListener('input', (event) => {
         // 1. check the input value, if none provided, do nothing
-
+        play()
+        activate()
+        getCheckbox().checked = false;
+        getNumberInput().toggleAttribute('disabled', true);
+        }
         // 2. restart a new round of game
-    });
+    );
 
 
     for (let tile of getTiles()) {
