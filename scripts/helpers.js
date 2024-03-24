@@ -124,7 +124,7 @@ export function setCard() {
 
      // cancel the animation
      getCardNode().classList.toggle('fade', false);
-     getCardNode().parentElement.classList.remove('flip', false);
+     getCardNode().parentElement.classList.toggle('flip', false);
 }
 
 export function showCard() {
@@ -136,7 +136,7 @@ export function showCard() {
 
     // animate the card
     getCardNode().classList.toggle('fade', true);
-    getCardNode().parentElement.classList.add('flip', true);
+    getCardNode().parentElement.classList.toggle('flip', true);
 
 }
 
